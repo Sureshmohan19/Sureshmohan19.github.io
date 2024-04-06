@@ -52,12 +52,12 @@
   <h1>Mathematics of Log returns</h1>
   <p class="semi-bold">I will discuss the basics of log returns, including an easy-to-understand explanation of the underlying mathematics. 
     I will also demonstrate the log returns calculation using a simple NumPy code. </p>
-  <p><strong>Published:</strong> April 6, 2024</p><br>
+  <p><strong>Published:</strong> April 6, 2024</p><hr>
 
   <div class="line"></div> <!-- Add line break here -->
 
-  <br><h2>Simple Returns</h2>
-  <p>In finance, simple return of an asset (or an investment) can be calculated using the following mathematical formula,</p>
+  <h2>Simple Returns</h2>
+  <p>In finance, the simple return of an asset (or an investment) can be calculated using the following mathematical formula,</p>
   <p>
     <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
       <mrow>
@@ -70,32 +70,28 @@
         <mrow>
           <msub>
             <mi>p</mi>
-            <mi>t</mi>
+            <mi>final_value</mi>
           </msub>
           <mo>-</mo>
           <msub>
               <mi>p</mi>
               <mrow>
-                <mi>t</mi>
-                <mo>-</mo>
-                <mn>1</mn>
+                <mi>initial_value</mi>
               </mrow>
             </msub>
         </mrow>
         <msub>
           <mi>p</mi>
           <mrow>
-            <mi>t</mi>
-            <mo>-</mo>
-            <mn>1</mn>
+            <mi>initial_value</mi>
           </mrow>
         </msub>
       </mfrac>
     </mrow>
   </math>
   <p>
-  <p>Obviously, everyone will be familiar with this calculation. The method will also helps calculating the investors' wealth over a period of time in an investment.
-    For example, let's say that I invest $100 in any stock and if my investment grows to $150 after a certain time, my return on investment will be 50%,
+  <p>Everyone will be familiar with this calculation. The method will also help calculate the investors' wealth over a certain period in an investment.
+    For example, let's say that I invest $100 in any stock and if my investment grows to $150 after a certain time, my return on investment will be 50%.
   </p>
   <p>
     <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -117,19 +113,36 @@
             <mi>100</mi>
           </mrow>
       </mfrac>
-      <mo>=</mo>
-      <mpadded width="0.5em">
-        <mrow>  
-          <mi>50%</mi>
-        <mrow>
     </mrow>
   </math>
   <p>
-  <p>The method is the same for calculating the return of an asset. Now we will see the log return and its calculations. <p><hr>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mrow>
+            <msub>
+              <mi>r</mi>
+              <mi>t</mi>
+            </msub>
+        <mo>=</mo>
+          <mrow>
+              <mi>0.5</mi>
+            <mo>x</mo>
+                <mrow>
+                  <mi>100</mi>
+                </mrow>
+          </mrow>
+        <mo>=</mo>
+        <mpadded width="0.5em">
+          <mrow>  
+            <mi>50%</mi>
+          <mrow>
+      </mrow>
+    </math>
+    <p>
+  <p>Straight forward calculation as it looks. The method is the same for calculating the return of an asset. Now we will see the log return and its calculations. <p><hr>
     
   <div class="line"></div> <!-- Add line break here -->
 
-  <br><h2>Log Returns</h2>
+  <h2>Log Returns</h2>
   <p><p>
 </div>
 
